@@ -5,7 +5,7 @@
 
 # API functions
 
-The API comes with a different set of functions that lets you adjust your Wikipedia datasets to your needs
+The API comes with a different set of functions that lets you adjust your Wikipedia datasets to the users needs:
 
 ```
 Enconding function to resolve encoding issues(may not be needed, depends on the workstation)
