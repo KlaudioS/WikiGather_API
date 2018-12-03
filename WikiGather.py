@@ -53,13 +53,10 @@ def get_URL():
 def create_ds():
 	global dictNumID
 	dictNumID = {}
-
 	global dictWebsize
 	dictWebsize = {}
-
 	global dictRequest
 	dictRequest = {}
-
 	global ds 
 	ds = []
 	for incrementer in range(11):
@@ -68,10 +65,8 @@ def create_ds():
 	for filename in os.listdir(path):
 		print(filename)
 		fdata= open(path+filename,encoding="ascii", errors="surrogateescape")	
-
 		for line in fdata:
 			addToDS(line)
-
 		calculateALL()
 		writeCSV()
 		clearData()
@@ -80,13 +75,10 @@ def create_ds():
 #create a Dataset with 8 columns from the original contains just the defined language for 24 hours	
 def create_ds_lang(desiredLang):
 	counter = 0
-
 	global dictNumID
 	dictNumID = {}
-
 	global dictWebsize
 	dictWebsize = {}
-
 	global dictRequest
 	dictRequest = {}
 
@@ -97,7 +89,7 @@ def add_to_ds(n):
 	global dictNumID
 	global dictWebsize
 	global dictRequest
-
+	
 	tmplist1 = []
 	tmplist2 = []
 	line = n
@@ -145,18 +137,15 @@ def write_CSV():
 	with open(csvdir+'final.csv', 'a') as csvfile:
 		label = ['language','sum_requests','sum_size','avg_requests','avg_size','Sample_stdev_requests','Sample_stdev_size','Population_stdev_requests','Population_stdev_size','total_Load','language_occur','Numeric_ID']
 		writer = csv.DictWriter(csvfile, lineterminator='\n', fieldnames=label)	
-
 		if labelflag == 0:
 			writer.writeheader()
 			labelflag = 1
-
 		for i in range(len(ds[0])):
 			writer.writerow({'language':ds[0][i],'sum_requests':ds[1][i],'sum_size':ds[2][i],'avg_requests':ds[3][i],'avg_size':ds[4][i],'Sample_stdev_requests':ds[5][i],'Sample_stdev_size':ds[6][i],'Population_stdev_requests':ds[7][i],'Population_stdev_size':ds[8][i],'total_Load':ds[9][i],'language_occur':ds[10][i],'Numeric_ID':dictNumID.get(ds[0][i])})
 		csvfile.close()
 
 #calculates the average,standard deviaton for request and webpage size
 def calculate_all():
-	print(len(ds[0]))
 	languageNumber = len(ds[0])	
 	
 	#Average Manual
@@ -217,16 +206,12 @@ def clearData():
 #create a Dataset with 41 columns from the original DS(40 input att and 1 output att),contains just the defined language	
 def create_ds_4h(desiredLang):
 	counter = 0
-
 	global dictNumID
 	dictNumID = {}
-
 	global dictWebsize
 	dictWebsize = {}
-
 	global dictRequest
 	dictRequest = {}
-
 	global ds 
 	ds = []
 	for incrementer in range(10):
@@ -291,20 +276,16 @@ def write_CSV_4h():
 	global finalDS
 	global labelflag
 
-	
 	with open(csvdir+'final4h1.csv', 'a') as csvfile:
 		label = ['sum_requests1','sum_size1','avg_requests1','avg_size1','Sample_stdev_requests1','Sample_stdev_size1','Population_stdev_requests1','Population_stdev_size1','total_Load1','language_occur1','sum_requests2','sum_size2','avg_requests2','avg_size2','Sample_stdev_requests2','Sample_stdev_size2','Population_stdev_requests2','Population_stdev_size2','total_Load2','language_occur2','sum_requests3','sum_size3','avg_requests3','avg_size3','Sample_stdev_requests3','Sample_stdev_size3','Population_stdev_requests3','Population_stdev_size3','total_Load3','language_occur3','sum_requests4','sum_size4','avg_requests4','avg_size4','Sample_stdev_requests4','Sample_stdev_size4','Population_stdev_requests4','Population_stdev_size4','total_Load4','language_occur4','target_load']
 		writer = csv.DictWriter(csvfile, lineterminator='\n', fieldnames=label)	
 		print("write CSV")
 		print(labelflag)
-		
 		if labelflag != 1:
 			writer.writeheader()
 			labelflag = 1
 			print("enter")
-
 		for i in range(len(finalDS)-4):
-			
 			print(len(finalDS))
 			print(i+5)
 			if i+5 < len(finalDS):
@@ -361,7 +342,6 @@ def add_to_ds_4h(rawline,lan):
 			
 #calculates the average,standard deviaton for request and webpage size
 def calculate_all_4h(desiredLang):
-	
 	#Average
 		if 'empty' == dictRequest.get(desiredLang,'empty'):
 			ds[2].append(0)
