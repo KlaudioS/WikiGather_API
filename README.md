@@ -8,7 +8,7 @@
 The API comes with a different set of functions that lets you adjust your Wikipedia datasets to the users needs:
 
 ```
-Enconding function to resolve encoding issues`
+Enconding function to resolve encoding issues
 def enconding():`
 ```
 
