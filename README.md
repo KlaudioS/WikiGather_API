@@ -7,15 +7,15 @@
 
 The API comes with a different set of functions that lets you adjust your Wikipedia datasets to the users needs:
 
-```
-Enconding function to resolve encoding issues(may not be needed, depends on the workstation)
+`
+##### Enconding function to resolve encoding issues
 def enconding():
-```
+`
 
-```
-###### #Generate list of the dataset names stored online
+`
+# Generate list of the dataset names stored online
 def get_URL():
-```
+`
 
 ```
 # create a Dataset with 9 columns from the original DS,contains all languages 
