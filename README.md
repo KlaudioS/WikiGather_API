@@ -27,10 +27,6 @@ def create_ds():
 def create_ds_lang(desiredLang):
 ```
 
-```
-# Increment or create new register for each new line read
-def add_to_ds(n):
-```
 
 ```
 # Write create DS out in CSV format		
@@ -58,11 +54,6 @@ def create_ds_4h(desiredLang):
 ```
 # Write csv with 41 columns
 def write_CSV_4h():
-```
-
-```
-# Increment or create new register for each new line read
-def add_to_ds_4h(rawline,lan):
 ```
 
 ```
