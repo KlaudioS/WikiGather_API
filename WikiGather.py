@@ -4,6 +4,9 @@
 ######            ######
 ########################
 
+#©ClaudioSilva
+#klaudio.ads@gmail.com
+
 # Gather wikipedia raw dataset and reformat them into .csv datasets
 
 import sys
