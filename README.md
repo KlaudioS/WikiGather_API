@@ -2,6 +2,8 @@
 
 The WikiGather API appeared from the need to download large raw data quantities from the Wikimedia foundation, with a simple and efficient tool.  The API allows an easy integration in researchers python projects.
 
+
+
 # Requirements
 - python 3.5.2
 
