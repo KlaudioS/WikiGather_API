@@ -12,10 +12,10 @@ The API comes with a different set of functions that lets you adjust your Wikipe
 def enconding():
 ```
 
-```
-# Generate list of the dataset names stored online
-def get_URL():
-```
+
+>#### #Generate list of the dataset names stored online
+>def get_URL():
+
 
 ```
 # Create a Dataset with 9 columns from the original DS,contains all languages 
