@@ -51,6 +51,8 @@ def clearData():
 
 #### 4 Hours functions
 
+The API also provides functions for creating datasets with aggregates of data of more then a hour, in this template the 4 hours are used as default value:
+
 ```python
 # Create a dataset with 4 hours worth of data per record,contains data just from the defined language	
 def create_ds_4h(desiredLang):
