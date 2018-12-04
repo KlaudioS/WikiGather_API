@@ -18,45 +18,44 @@ def get_URL():
 ```
 
 ```python
-# Create a Dataset with 9 columns from the original DS,contains all languages 
+# Create a Dataset with 9 attributes from the raw file,contains data from all languages 
 def create_ds():
 ```
 
 ```python
-# Create a Dataset with 8 columns from the original contains just the defined language for 24 hours	
+# Create a Dataset with 8 attributes from the raw file, contains just data from the desired language	
 def create_ds_lang(desiredLang):
 ```
 
 
 ```python
-# Write create DS out in CSV format		
+# Write a dataset out in CSV format		
 def write_CSV():
 ```
 
 ```python
-# Calculates the average,standard deviaton for request and webpage size
+# Calculate the average,standard deviaton for request and webpage size
 def calculate_all():
 ```
 
 ```python
-# Clear all variables to be reused on the next step
+# Clear data from all variables, used when in need to restart a process
 def clearData():
 ```
-
 
 #### 4 Hours functions
 
 ```python
-# Create a Dataset with 41 columns from the original DS(40 input att and 1 output att),contains just the defined language	
+# Create a dataset with 4 hours worth of data per record,contains data just from the defined language	
 def create_ds_4h(desiredLang):
 ```
 
 ```python
-# Write csv with 41 columns
+# Write out a 4 hours record dataset in CSV format
 def write_CSV_4h():
 ```
 
 ```python
-# Calculates the average,standard deviaton for request and webpage size
+# Calculate the average,standard deviaton for request and webpage size
 def calculate_all_4h(desiredLang):
 ```
