@@ -46,7 +46,7 @@ def calculate_all():
 
 ```python
 # Clear data from all variables, used when in need to restart a process
-def clearData():
+def clear_data():
 ```
 
 #### 4 Hours functions
